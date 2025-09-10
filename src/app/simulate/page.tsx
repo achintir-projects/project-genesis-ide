@@ -138,16 +138,6 @@ export default function SimulatePage() {
     }, 2000)
   }
 
-    const interval = setInterval(() => {
-      screenIndex = (screenIndex + 1) % appPreview.screens.length
-      setCurrentScreen(screenIndex)
-      
-      if (screenIndex === appPreview.screens.length - 1) {
-        setIsPlaying(false)
-        clearInterval(interval)
-      }
-    }, 2000)
-  }
 
   const resetSimulation = () => {
     setIsPlaying(false)
